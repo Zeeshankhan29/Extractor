@@ -1,0 +1,618 @@
+[2023-08-17 17:44:32,273] : [root] : [INFO] : [creating directory .github\workflows for file .gitkeep]
+[2023-08-17 17:44:32,276] : [root] : [INFO] : [Creating a empty .gitkeep]
+[2023-08-17 17:44:32,277] : [root] : [INFO] : [creating directory .github\workflows for file main.yaml]
+[2023-08-17 17:44:32,278] : [root] : [INFO] : [Creating a empty main.yaml]
+[2023-08-17 17:44:32,279] : [root] : [INFO] : [creating directory src\extractor for file __init__.py]
+[2023-08-17 17:44:32,281] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,282] : [root] : [INFO] : [creating directory src\extractor\components for file __init__.py]
+[2023-08-17 17:44:32,283] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,284] : [root] : [INFO] : [creating directory src\extractor\entity for file __init__.py]
+[2023-08-17 17:44:32,286] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,287] : [root] : [INFO] : [creating directory src\extractor\constants for file __init__.py]
+[2023-08-17 17:44:32,289] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,290] : [root] : [INFO] : [creating directory src\extractor\config for file __init__.py]
+[2023-08-17 17:44:32,293] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,296] : [root] : [INFO] : [creating directory src\extractor\utils for file __init__.py]
+[2023-08-17 17:44:32,297] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,299] : [root] : [INFO] : [creating directory src\extractor\pipeline for file __init__.py]
+[2023-08-17 17:44:32,301] : [root] : [INFO] : [Creating a empty __init__.py]
+[2023-08-17 17:44:32,301] : [root] : [INFO] : [creating directory configs for file config.yaml]
+[2023-08-17 17:44:32,302] : [root] : [INFO] : [file config.yaml already exists]
+[2023-08-17 17:44:32,303] : [root] : [INFO] : [file requirements.txt already exists]
+[2023-08-17 17:44:32,303] : [root] : [INFO] : [file setup.py already exists]
+[2023-08-17 17:44:32,303] : [root] : [INFO] : [file main.py already exists]
+[2023-08-17 17:44:32,305] : [root] : [INFO] : [Creating a empty .gitignore]
+[2023-08-17 17:44:32,308] : [root] : [INFO] : [Creating a empty README.md]
+[2023-08-17 17:44:32,309] : [root] : [INFO] : [creating directory yolo-config for file task-seg.yaml]
+[2023-08-17 17:44:32,311] : [root] : [INFO] : [Creating a empty task-seg.yaml]
+[2023-08-23 12:41:25,130] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'pdf_jpg']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.pdf_jpg()
+AttributeError: 'DataIngestion' object has no attribute 'pdf_jpg'
+[2023-08-23 12:42:15,908] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'noise_removal_bw']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.noise_removal_bw()
+AttributeError: 'DataIngestion' object has no attribute 'noise_removal_bw'
+[2023-08-23 12:46:58,145] : [root] : [ERROR] : [cannot open resource]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.pdf_jpg()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 79, in pdf_jpg
+    im_show = draw_ocr(image, boxes, txts, scores, font_path='/path/to/PaddleOCR/doc/fonts/simfang.ttf')
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\tools\infer\utility.py", line 397, in draw_ocr
+    txt_img = text_visual(
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\tools\infer\utility.py", line 545, in text_visual
+    font = ImageFont.truetype(font_path, font_size, encoding="utf-8")
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\PIL\ImageFont.py", line 996, in truetype
+    return freetype(font)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\PIL\ImageFont.py", line 993, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\PIL\ImageFont.py", line 248, in __init__
+    self.font = core.getfont(
+OSError: cannot open resource
+[2023-08-23 13:13:56,559] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'artifacts/data\\pdf_jpg_data.txt']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.pdf_jpg()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 72, in pdf_jpg
+    with open(file_name,'r+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data\\pdf_jpg_data.txt'
+[2023-08-23 13:14:46,711] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\pdf_jpg_data.txt']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.pdf_jpg()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 72, in pdf_jpg
+    with open(file_name,'r+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\pdf_jpg_data.txt'
+[2023-08-28 11:49:28,868] : [root] : [ERROR] : ['Document' object has no attribute 'pageCount']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.pdf_jpg()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 65, in pdf_jpg
+    result = ocr.ocr(img_path, cls=True)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\paddleocr.py", line 637, in ocr
+    img = check_img(img)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\paddleocr.py", line 527, in check_img
+    img, flag_gif, flag_pdf = check_and_read(image_file)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\ppocr\utils\utility.py", line 96, in check_and_read
+    for pg in range(0, pdf.pageCount):
+AttributeError: 'Document' object has no attribute 'pageCount'
+[2023-08-28 12:29:10,052] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'process_image']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.process_image(uploaded_file)
+AttributeError: 'DataIngestion' object has no attribute 'process_image'
+[2023-08-28 12:30:47,854] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 151, in text_extraction
+    _, img_extension = os.path.splitext(img_path)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 230, in splitext
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:34:07,675] : [root] : [ERROR] : []
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 156, in text_extraction
+    self.jpg_file(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 74, in jpg_file
+    result = ocr.ocr(img_path, cls=True)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\paddleocr.py", line 628, in ocr
+    assert isinstance(img, (np.ndarray, list, str, bytes))
+AssertionError
+[2023-08-28 12:36:32,346] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'process_image']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+AttributeError: 'DataIngestion' object has no attribute 'process_image'
+[2023-08-28 12:36:58,246] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 151, in text_extraction
+    _, img_extension = os.path.splitext(img_path)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 230, in splitext
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:38:01,573] : [root] : [ERROR] : []
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 156, in text_extraction
+    self.jpg_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 74, in jpg_file
+    result = ocr.ocr(img_path, cls=True)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\paddleocr\paddleocr.py", line 628, in ocr
+    assert isinstance(img, (np.ndarray, list, str, bytes))
+AssertionError
+[2023-08-28 12:41:13,411] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 171, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 158, in text_extraction
+    self.jpg_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 77, in jpg_file
+    file = os.path.basename(img_path)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 242, in basename
+    return split(p)[1]
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 211, in split
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:51:14,201] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 171, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 156, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 104, in pdf_file
+    file = os.path.basename(pdf_path)
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 242, in basename
+    return split(p)[1]
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\ntpath.py", line 211, in split
+    p = os.fspath(p)
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:53:08,692] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 12:53:08,692] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 12:53:08,695] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 12:53:08,695] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 12:53:08,697] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 12:53:08,697] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 12:53:08,698] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 12:53:08,698] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 12:53:12,198] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 12:53:12,198] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 12:53:12,203] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 12:53:12,203] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 12:53:12,206] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 12:53:12,206] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 12:53:12,207] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 12:53:12,207] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 12:53:12,281] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 172, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 157, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 108, in pdf_file
+    with open(pdf_path, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:53:12,281] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 172, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 157, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 108, in pdf_file
+    with open(pdf_path, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 12:54:28,362] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not NoneType]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 172, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 157, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 108, in pdf_file
+    with open(img, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+[2023-08-28 12:57:38,279] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\Menu A3 CC.txt']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 174, in run_streamlit
+    download_link = self.generate_download_button(uploaded_file, file_name)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 182, in generate_download_button
+    data=processed_file_path.read_bytes(),
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\Menu A3 CC.txt'
+[2023-08-28 13:02:13,666] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not NoneType]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 154, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 105, in pdf_file
+    with open(img, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+[2023-08-28 13:03:01,622] : [root] : [ERROR] : [expected str, bytes or os.PathLike object, not UploadedFile]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 169, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 154, in text_extraction
+    self.pdf_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 105, in pdf_file
+    with open(pdf_path, 'rb') as pdf_file:
+TypeError: expected str, bytes or os.PathLike object, not UploadedFile
+[2023-08-28 13:05:09,525] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\56 Menu (1).txt']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 178, in run_streamlit
+    download_link = self.generate_download_button(uploaded_file, file_name)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in generate_download_button
+    data=processed_file_path.read_bytes(),
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\56 Menu (1).txt'
+[2023-08-28 13:08:56,446] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\56 Menu (1).txt']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 178, in run_streamlit
+    download_link = self.generate_download_button(uploaded_file, file_name)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in generate_download_button
+    data=processed_file_path.read_bytes(),
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\56 Menu (1).txt'
+[2023-08-28 13:20:38,712] : [root] : [ERROR] : [local variable 'download_link' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in run_streamlit
+    st.markdown(download_link, unsafe_allow_html=True)
+UnboundLocalError: local variable 'download_link' referenced before assignment
+[2023-08-28 13:21:32,623] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\WhatsApp Image 2023-08-11 at 12.xlsx']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 178, in run_streamlit
+    download_link_xlsx = self.generate_download_button(uploaded_file, "xlsx")
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 194, in generate_download_button
+    data=processed_file_path.read_bytes(),
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\WhatsApp Image 2023-08-11 at 12.xlsx'
+[2023-08-28 13:26:50,624] : [root] : [ERROR] : [local variable 'download_link' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in run_streamlit
+    st.markdown(download_link, unsafe_allow_html=True)
+UnboundLocalError: local variable 'download_link' referenced before assignment
+[2023-08-28 13:29:21,603] : [root] : [ERROR] : [local variable 'download_link' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in run_streamlit
+    st.markdown(download_link, unsafe_allow_html=True)
+UnboundLocalError: local variable 'download_link' referenced before assignment
+[2023-08-28 13:29:26,631] : [root] : [ERROR] : [local variable 'download_link' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 32, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 186, in run_streamlit
+    st.markdown(download_link, unsafe_allow_html=True)
+UnboundLocalError: local variable 'download_link' referenced before assignment
+[2023-08-28 16:39:30,874] : [root] : [ERROR] : [[Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\WhatsApp Image 2023-08-28 at 4.xlsx']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 178, in run_streamlit
+    download_link_xlsx = self.generate_download_button(uploaded_file, "xlsx")
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 193, in generate_download_button
+    data=processed_file_path.read_bytes(),
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Zeeshan.khan\\vscode_projects\\pdf_extractor\\artifacts\\data\\WhatsApp Image 2023-08-28 at 4.xlsx'
+[2023-08-28 17:34:54,068] : [root] : [ERROR] : ['float' object is not subscriptable]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 215, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 201, in text_extraction
+    self.jpg_file(img_path)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 80, in jpg_file
+    if entity[1] == "PRODUCT":
+TypeError: 'float' object is not subscriptable
+[2023-08-28 17:39:13,570] : [root] : [ERROR] : [[E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 10, in main
+    data_ingestion = DataIngestion(data_ingestion_config)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 25, in __init__
+    self.ner_model = spacy.load("en_core_web_sm")
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\spacy\__init__.py", line 51, in load
+    return util.load_model(
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\spacy\util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+[2023-08-28 17:39:13,570] : [root] : [ERROR] : [[E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.]
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 10, in main
+    data_ingestion = DataIngestion(data_ingestion_config)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 25, in __init__
+    self.ner_model = spacy.load("en_core_web_sm")
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\spacy\__init__.py", line 51, in load
+    return util.load_model(
+  File "C:\Users\Zeeshan.khan\AppData\Local\anaconda3\envs\extractor\lib\site-packages\spacy\util.py", line 472, in load_model
+    raise IOError(Errors.E050.format(name=name))
+OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Python package or a valid path to a data directory.
+[2023-08-28 18:07:37,027] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:07:37,027] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:07:37,037] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:07:37,037] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:07:37,040] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:07:37,040] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:07:37,043] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:07:37,043] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:07:45,719] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:07:45,719] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:07:45,727] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:07:45,727] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:07:45,730] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:07:45,730] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:07:45,731] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:07:45,731] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:07:47,003] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'jpg_file']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 207, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 193, in text_extraction
+    self.jpg_file(img_path)
+AttributeError: 'DataIngestion' object has no attribute 'jpg_file'
+[2023-08-28 18:07:47,003] : [root] : [ERROR] : ['DataIngestion' object has no attribute 'jpg_file']
+Traceback (most recent call last):
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 17, in <module>
+    main()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\main.py", line 11, in main
+    data_ingestion.run_streamlit()
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 207, in run_streamlit
+    self.text_extraction(uploaded_file)
+  File "C:\Users\Zeeshan.khan\vscode_projects\pdf_extractor\src\extractor\components\data_ingestion.py", line 193, in text_extraction
+    self.jpg_file(img_path)
+AttributeError: 'DataIngestion' object has no attribute 'jpg_file'
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,214] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:08:55,219] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,219] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,226] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,219] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,226] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,226] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,229] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:08:55,231] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:08:55,232] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:08:55,231] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:08:55,232] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:08:55,231] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:08:55,232] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:09:19,820] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:09:19,820] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:09:19,820] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:09:19,827] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:09:19,827] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:09:19,827] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:09:19,829] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:09:19,829] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:09:19,829] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:09:19,831] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:09:19,831] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:09:19,831] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:24:49,379] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:24:49,379] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:24:49,379] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:24:49,379] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:24:49,385] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:24:49,388] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:24:49,385] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:24:49,388] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:24:49,390] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:24:49,392] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:24:49,390] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:24:49,392] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:24:49,393] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:24:49,394] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:24:49,393] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:24:49,394] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,563] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:26:05,568] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,570] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,568] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,570] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,568] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,570] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:26:05,576] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,576] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,576] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,577] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,577] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,577] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:26:05,579] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,244] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:27:09,255] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,255] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,255] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,255] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,260] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,260] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,260] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,260] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:27:09,263] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,263] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,263] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,263] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,264] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,264] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,264] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,265] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,264] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:27:09,265] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,265] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,267] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,265] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,267] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,267] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:27:09,267] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:21,385] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:21,385] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:21,385] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:21,385] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:21,385] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:21,392] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:21,392] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:21,392] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:21,392] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:21,392] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:21,395] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:21,395] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:21,395] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:21,395] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:21,395] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:21,396] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:21,396] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:21,396] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:21,396] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:21,396] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:27,415] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:27,415] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:27,415] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:27,415] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:27,415] : [root] : [INFO] : [loading config yaml configuration file: configs\config.yaml]
+[2023-08-28 18:39:27,423] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:27,423] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:27,423] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:27,423] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:27,423] : [root] : [INFO] : [yaml file: configs\config.yaml loaded successfully]
+[2023-08-28 18:39:27,427] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:27,427] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:27,427] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:27,427] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:27,427] : [root] : [INFO] : [created directory at: artifacts]
+[2023-08-28 18:39:27,430] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:27,430] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:27,430] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:27,430] : [root] : [INFO] : [created directory at: artifacts/data]
+[2023-08-28 18:39:27,430] : [root] : [INFO] : [created directory at: artifacts/data]
