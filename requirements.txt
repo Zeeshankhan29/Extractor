@@ -17,5 +17,7 @@ pdfplumber
 streamlit
 paddleocr
 paddlepaddle
+pdf2image
+PyMuPDF
 # --upgrade mysql-connector-python
 -e .
