@@ -4,6 +4,7 @@ from pathlib import Path
 @dataclass(frozen=True)
 class DataIngestionConfig:
     data_dir : Path
+    file_dir : Path
     
 
 
