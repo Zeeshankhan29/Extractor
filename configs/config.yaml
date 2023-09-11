@@ -3,6 +3,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   data_dir : artifacts/data
+  file_dir : artifacts/data/valid_files
   
 
 
