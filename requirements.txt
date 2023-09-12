@@ -19,5 +19,7 @@ paddleocr
 paddlepaddle
 pdf2image
 PyMuPDF
+spacy
+# python -m spacy download en_core_web_sm
 # --upgrade mysql-connector-python
 -e .
