@@ -101,7 +101,7 @@ class DataIngestion:
         values=[]
         for data in df1.values:
             if data[0].isdigit()==False:
-                data[0]= data[0].replace('/-', '').replace('Rs', '').replace('/', '')
+                data[0]= data[0].replace('/-', '').replace('Rs', '').replace('/', '').replace(" ",'')
                 values.append(data[0])
             else:
                 values.append(data[0])
